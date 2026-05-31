@@ -40,14 +40,14 @@ function Counter({ target, suffix, label }: { target: number; suffix: string; la
     <div ref={ref} className="flex flex-col">
       <span
         className="font-black leading-none"
-        style={{ fontSize: "clamp(1.5rem, 2.8vw, 2.2rem)", color: "var(--accent-primary)" }}
+        style={{ fontSize: "clamp(0.95rem, 1.5vw, 1.2rem)", color: "var(--accent-primary)" }}
       >
         {count}
         <span style={{ color: "var(--accent-secondary)" }}>{suffix}</span>
       </span>
       <span
-        className="font-semibold uppercase tracking-wider mt-1"
-        style={{ fontSize: "clamp(0.58rem, 0.9vw, 0.7rem)", color: "rgba(255,255,255,0.55)" }}
+        className="font-semibold uppercase tracking-wider mt-0.5"
+        style={{ fontSize: "clamp(0.48rem, 0.65vw, 0.55rem)", color: "rgba(255,255,255,0.5)" }}
       >
         {label}
       </span>
@@ -142,7 +142,7 @@ export function Hero() {
       >
         <div className="container">
           {/* Left half container — takes exactly 50% on desktop */}
-          <div className="w-full lg:w-1/2 py-24">
+          <div className="w-full lg:w-1/2 pt-36 lg:pt-32 pb-20">
           <motion.div
             variants={stagger}
             initial="hidden"
@@ -182,7 +182,7 @@ export function Hero() {
               variants={fade}
               className="font-black tracking-tight leading-[1.05]"
               style={{
-                fontSize: "clamp(2.8rem, 6.2vw, 5.5rem)",
+                fontSize: "clamp(2.2rem, 5vw, 4.4rem)",
                 fontFamily: "var(--font-outfit), sans-serif",
               }}
             >
@@ -265,13 +265,13 @@ export function Hero() {
             {/* Stats */}
             <motion.div
               variants={fade}
-              className="flex items-center justify-center lg:justify-start gap-6 sm:gap-8 pt-6"
+              className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 pt-4"
               style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}
             >
               <Counter target={500}  suffix="+" label="Clients"  />
-              <div className="w-px h-8" style={{ background: "rgba(255,255,255,0.12)" }} />
+              <div className="w-px h-5" style={{ background: "rgba(255,255,255,0.12)" }} />
               <Counter target={1000} suffix="+" label="Sessions" />
-              <div className="w-px h-8" style={{ background: "rgba(255,255,255,0.12)" }} />
+              <div className="w-px h-5" style={{ background: "rgba(255,255,255,0.12)" }} />
               <Counter target={8}    suffix="+" label="Years"    />
             </motion.div>
 
