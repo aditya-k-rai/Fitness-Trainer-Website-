@@ -153,7 +153,7 @@ export function Hero() {
             {/* Badge */}
             <motion.div
               variants={fade}
-              className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full mb-8"
+              className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full mb-8 transition-all duration-300 hover:scale-105 hover:border-[var(--accent-secondary)]/50 cursor-pointer"
               style={{
                 background: "linear-gradient(90deg, rgba(255,107,53,0.18) 0%, rgba(255,107,53,0.05) 100%)",
                 border: "1px solid rgba(255,107,53,0.3)",
@@ -187,13 +187,13 @@ export function Hero() {
               }}
             >
               <span
-                className="block text-white uppercase"
+                className="block text-white uppercase transition-all duration-300 hover:translate-x-1.5 cursor-default"
                 style={{ textShadow: "0 4px 20px rgba(0,0,0,0.6)" }}
               >
-                Transform Your <span className="gradient-text">Body</span>
+                Transform Your <span className="gradient-text inline-block transition-all duration-300 hover:scale-110 hover:rotate-1">Body</span>
               </span>
               <span 
-                className="block uppercase mt-1"
+                className="block uppercase mt-1 transition-all duration-500 hover:text-white hover:translate-x-1.5 cursor-default"
                 style={{
                   WebkitTextStroke: "1.5px rgba(255,255,255,0.8)",
                   color: "transparent",
@@ -215,12 +215,12 @@ export function Hero() {
               }}
             >
               Certified Personal Trainer &amp; Athletic Coach. Specialising in{" "}
-              <strong className="text-white font-semibold">Fat Loss</strong>,{" "}
-              <strong className="text-white font-semibold">Muscle Gain</strong>,{" "}
-              <strong className="text-white font-semibold">Gymnastics</strong>, and{" "}
-              <strong className="text-white font-semibold">Therapeutic Recovery</strong>.
+              <strong className="text-white font-semibold transition-all duration-300 hover:text-[var(--accent-primary)] hover:scale-105 inline-block cursor-default">Fat Loss</strong>,{" "}
+              <strong className="text-white font-semibold transition-all duration-300 hover:text-[var(--accent-primary)] hover:scale-105 inline-block cursor-default">Muscle Gain</strong>,{" "}
+              <strong className="text-white font-semibold transition-all duration-300 hover:text-[var(--accent-primary)] hover:scale-105 inline-block cursor-default">Gymnastics</strong>, and{" "}
+              <strong className="text-white font-semibold transition-all duration-300 hover:text-[var(--accent-primary)] hover:scale-105 inline-block cursor-default">Therapeutic Recovery</strong>.
               Delivering real, sustainable results for over{" "}
-              <span style={{ color: "var(--accent-secondary)" }} className="font-bold">8+ years</span>.
+              <span style={{ color: "var(--accent-secondary)" }} className="font-bold transition-all duration-300 hover:scale-105 inline-block cursor-default">8+ years</span>.
             </motion.p>
 
             {/* CTA Row */}
