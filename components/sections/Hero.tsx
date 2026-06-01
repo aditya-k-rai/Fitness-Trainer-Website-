@@ -153,7 +153,7 @@ export function Hero() {
             {/* Badge */}
             <motion.div
               variants={fade}
-              className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full mb-8 transition-all duration-300 hover:scale-105 hover:border-[var(--accent-secondary)]/50 cursor-pointer"
+              className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full mb-14 transition-all duration-300 hover:scale-105 hover:border-[var(--accent-secondary)]/50 cursor-pointer"
               style={{
                 background: "linear-gradient(90deg, rgba(255,107,53,0.18) 0%, rgba(255,107,53,0.05) 100%)",
                 border: "1px solid rgba(255,107,53,0.3)",
@@ -190,7 +190,7 @@ export function Hero() {
                 className="block text-white uppercase transition-all duration-300 hover:translate-x-1.5 cursor-default"
                 style={{ textShadow: "0 4px 20px rgba(0,0,0,0.6)" }}
               >
-                Transform Your <span className="gradient-text inline-block transition-all duration-300 hover:scale-110 hover:rotate-1">Body</span>
+                Transform Your <span className="inline-block transition-all duration-300 hover:scale-110 hover:rotate-1" style={{ color: "var(--accent-primary)" }}>Body</span>
               </span>
               <span 
                 className="block uppercase mt-1 transition-all duration-500 hover:text-white hover:translate-x-1.5 cursor-default"
