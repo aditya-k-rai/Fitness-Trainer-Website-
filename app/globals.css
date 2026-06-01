@@ -1889,6 +1889,7 @@ a.contact-value:hover { color: var(--accent-primary); }
 
   .gallery-item-tall {
     grid-row: span 1;
+    aspect-ratio: 1;
   }
 
   .testimonials-grid {

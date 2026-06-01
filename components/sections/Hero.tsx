@@ -40,14 +40,14 @@ function Counter({ target, suffix, label }: { target: number; suffix: string; la
     <div ref={ref} className="flex flex-col">
       <span
         className="font-black leading-none"
-        style={{ fontSize: "clamp(0.95rem, 1.5vw, 1.2rem)", color: "var(--accent-primary)" }}
+        style={{ fontSize: "clamp(1.1rem, 1.6vw, 1.35rem)", color: "var(--accent-primary)" }}
       >
         {count}
         <span style={{ color: "var(--accent-secondary)" }}>{suffix}</span>
       </span>
       <span
         className="font-semibold uppercase tracking-wider mt-0.5"
-        style={{ fontSize: "clamp(0.48rem, 0.65vw, 0.55rem)", color: "rgba(255,255,255,0.5)" }}
+        style={{ fontSize: "clamp(0.65rem, 0.8vw, 0.75rem)", color: "rgba(255,255,255,0.5)" }}
       >
         {label}
       </span>
