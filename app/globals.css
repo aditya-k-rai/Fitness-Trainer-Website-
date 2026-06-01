@@ -2045,6 +2045,12 @@ a.contact-value:hover { color: var(--accent-primary); }
   animation: spin-slow 20s linear infinite;
 }
 
+@media (max-width: 768px) {
+  .hero-video {
+    object-position: 70% center !important;
+  }
+}
+
 
 
 

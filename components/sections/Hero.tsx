@@ -105,7 +105,7 @@ export function Hero() {
           ref={videoRef}
           src="/videos/hero.mp4"
           autoPlay loop muted playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover hero-video"
           aria-hidden="true"
         />
       </motion.div>
