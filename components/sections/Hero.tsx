@@ -138,11 +138,12 @@ export function Hero() {
           rotateX: tiltX,
           rotateY: tiltY,
           transformPerspective: 900,
+          paddingTop: "120px",
         }}
       >
         <div className="container">
           {/* Left half container — takes exactly 50% on desktop */}
-          <div className="w-full lg:w-1/2 pt-36 lg:pt-32 pb-20">
+          <div className="w-full lg:w-1/2" style={{ paddingTop: "0px", paddingBottom: "80px" }}>
           <motion.div
             variants={stagger}
             initial="hidden"
@@ -193,8 +194,9 @@ export function Hero() {
                 Transform Your <span className="inline-block transition-all duration-300 hover:scale-110 hover:rotate-1" style={{ color: "var(--accent-primary)" }}>Body</span>
               </span>
               <span 
-                className="block uppercase mt-1 transition-all duration-500 hover:text-white hover:translate-x-1.5 cursor-default"
+                className="block uppercase transition-all duration-500 hover:text-white hover:translate-x-1.5 cursor-default"
                 style={{
+                  marginTop: "0",
                   WebkitTextStroke: "1.5px rgba(255,255,255,0.8)",
                   color: "transparent",
                   textShadow: "none",
@@ -207,8 +209,10 @@ export function Hero() {
             {/* Subtitle */}
             <motion.p
               variants={fade}
-              className="leading-relaxed mt-6 mb-10 max-w-xl mx-auto lg:mx-0"
+              className="leading-relaxed max-w-xl mx-auto lg:mx-0"
               style={{
+                marginTop: "28px",
+                marginBottom: "36px",
                 fontSize: "clamp(0.95rem, 1.2vw, 1.15rem)",
                 color: "var(--text-secondary)",
                 textShadow: "0 1px 8px rgba(0,0,0,0.5)",
@@ -224,7 +228,7 @@ export function Hero() {
             </motion.p>
 
             {/* CTA Row */}
-            <motion.div variants={fade} className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 mb-12">
+            <motion.div variants={fade} className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5" style={{ marginBottom: "36px" }}>
               <a
                 href="#contact"
                 onClick={(e) => scrollTo(e, "#contact")}
@@ -265,8 +269,8 @@ export function Hero() {
             {/* Stats */}
             <motion.div
               variants={fade}
-              className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 pt-4"
-              style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}
+              className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6"
+              style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "20px" }}
             >
               <Counter target={500}  suffix="+" label="Clients"  />
               <div className="w-px h-5" style={{ background: "rgba(255,255,255,0.12)" }} />
