@@ -111,7 +111,7 @@ export function Hero() {
       </motion.div>
 
       {/* ── LEFT-HALF OVERLAY — dark on left 50%, clear on right ── */}
-      <div className="absolute inset-0 z-10 pointer-events-none">
+      <div className="absolute inset-0 z-10 pointer-events-none hero-overlay-container">
         {/* Dark left half that covers the text area */}
         <div
           className="absolute inset-0"

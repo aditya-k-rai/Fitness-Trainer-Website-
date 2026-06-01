@@ -2049,6 +2049,9 @@ a.contact-value:hover { color: var(--accent-primary); }
   .hero-video {
     object-position: 70% center !important;
   }
+  .hero-overlay-container {
+    display: none !important;
+  }
 }
 
 
