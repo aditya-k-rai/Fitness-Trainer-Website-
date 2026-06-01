@@ -148,13 +148,13 @@ export function Hero() {
             variants={stagger}
             initial="hidden"
             animate="show"
-            className="text-center lg:text-left"
+            className="text-center lg:text-left mobile-text-card"
           >
 
             {/* Badge */}
             <motion.div
               variants={fade}
-              className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full mb-14 transition-all duration-300 hover:scale-105 hover:border-[var(--accent-secondary)]/50 cursor-pointer"
+              className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full mb-14 transition-all duration-300 hover:scale-105 hover:border-[var(--accent-secondary)]/50 cursor-pointer hero-badge-el"
               style={{
                 background: "linear-gradient(90deg, rgba(255,107,53,0.18) 0%, rgba(255,107,53,0.05) 100%)",
                 border: "1px solid rgba(255,107,53,0.3)",
@@ -181,7 +181,7 @@ export function Hero() {
             {/* Headline */}
             <motion.h1
               variants={fade}
-              className="font-black tracking-tight leading-[1.05]"
+              className="font-black tracking-tight leading-[1.05] hero-title-el"
               style={{
                 fontSize: "clamp(2.2rem, 5vw, 4.4rem)",
                 fontFamily: "var(--font-outfit), sans-serif",
@@ -209,7 +209,7 @@ export function Hero() {
             {/* Subtitle */}
             <motion.p
               variants={fade}
-              className="leading-relaxed max-w-xl mx-auto lg:mx-0"
+              className="leading-relaxed max-w-xl mx-auto lg:mx-0 hero-subtitle-el"
               style={{
                 marginTop: "28px",
                 marginBottom: "36px",
@@ -228,12 +228,12 @@ export function Hero() {
             </motion.p>
 
             {/* CTA Row */}
-            <motion.div variants={fade} className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5" style={{ marginBottom: "36px" }}>
+            <motion.div variants={fade} className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 hero-ctas-el" style={{ marginBottom: "36px" }}>
               <a
                 href="#contact"
                 onClick={(e) => scrollTo(e, "#contact")}
                 id="heroCtaPrimary"
-                className="group inline-flex items-center justify-center gap-2.5 font-extrabold text-white uppercase tracking-wider transition-all duration-300 hover:scale-[1.03]"
+                className="group inline-flex items-center justify-center gap-2.5 font-extrabold text-white uppercase tracking-wider transition-all duration-300 hover:scale-[1.03] hero-btn-primary"
                 style={{
                   background: "var(--accent-gradient)",
                   boxShadow: "0 6px 20px rgba(255,107,53,0.3)",
@@ -250,7 +250,7 @@ export function Hero() {
                 href="#about"
                 onClick={(e) => scrollTo(e, "#about")}
                 id="heroCtaSecondary"
-                className="group inline-flex items-center justify-center gap-2 font-bold text-white uppercase tracking-wider transition-all duration-300 hover:scale-[1.03]"
+                className="group inline-flex items-center justify-center gap-2 font-bold text-white uppercase tracking-wider transition-all duration-300 hover:scale-[1.03] hero-btn-secondary"
                 style={{
                   background: "rgba(255,255,255,0.04)",
                   border: "1px solid rgba(255,255,255,0.15)",
@@ -269,7 +269,7 @@ export function Hero() {
             {/* Stats */}
             <motion.div
               variants={fade}
-              className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6"
+              className="flex items-center justify-center lg:justify-start gap-4 sm:gap-6 hero-stats-el"
               style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "20px" }}
             >
               <Counter target={500}  suffix="+" label="Clients"  />
